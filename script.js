@@ -5,24 +5,24 @@ function login()
   var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
   if(uname =='')
   {
-    alert("Please enter user name.");
+    alert("Please enter username.");
   }
   else if(pwd=='')
   {
-        alert("Enter the password");
+        alert("Please enter the password.");
   }
   else if(!filter.test(uname))
   {
-    alert("Enter valid email id.");
+    alert("Please enter valid email.");
   }
   else if(pwd.length < 6 || pwd.length > 6)
   {
-    alert("Password min length is 6.");
+    alert("Password minimum length is 6.");
   }
   else
   {
-alert('Thank You for Login & You are Redirecting to GitHub of Melikhaya Dlangamandla');
+alert('Thank You for Login & You are redirecting to the TO-DO List App');
 //Redirecting to other page or webste code or you can set your own html page.
-     window.location = "https://github.com/mdlangamandla";
+     window.location = "https://mdlangamandla-todo-list.vercel.app/";
     }
 }
